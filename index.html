@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Master de Animes</title>
+     <link rel="icon" type="image/x-icon" href="rem.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎌 Lista Master de Animes</h1>
+
+        <div class="anime-form">
+            <input type="text" id="animeName" placeholder="Nome do Anime">
+            <input type="text" id="animeGenre" placeholder="Gênero">
+            <input type="number" id="animeYear" placeholder="Ano de Lançamento">
+            <input type="number" id="animeEpisodes" placeholder="Nº de Episódios">
+            <select id="animeStatus">
+                <option value="Assistindo">📺 Assistindo</option>
+                <option value="Completo">✔️ Completo</option>
+                <option value="Dropado">❌ Dropado</option>
+                <option value="Planejo Ver">📌 Planejo Ver</option>
+            </select>
+            <button class="add-btn" onclick="addAnime()">+ Adicionar</button>
+        </div>
+
+        <div id="animeList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
